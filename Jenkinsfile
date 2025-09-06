@@ -21,5 +21,11 @@ az account show'''
       }
     }
 
+    stage('terraform-plan') {
+      steps {
+        sh 'terraform plan'
+      }
+    }
+
   }
 }
