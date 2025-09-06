@@ -15,5 +15,11 @@ az account show'''
       }
     }
 
+    stage('terraform-init') {
+      steps {
+        sh 'terraform init'
+      }
+    }
+
   }
 }
