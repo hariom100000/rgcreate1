@@ -27,5 +27,11 @@ az account show'''
       }
     }
 
+    stage('terraform-apply') {
+      steps {
+        sh 'terraform apply -auto-approve'
+      }
+    }
+
   }
 }
